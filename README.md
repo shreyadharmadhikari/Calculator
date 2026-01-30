@@ -25,3 +25,6 @@ A simple and responsive calculator web application that performs basic mathemati
 
 ### 📂 Project Type  
 Frontend Web Application
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c4efa548-a17c-4e42-ae0d-2690756bacbb" />
+
