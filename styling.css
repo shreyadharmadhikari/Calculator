@@ -1,0 +1,67 @@
+#outerBox {
+  width: 35vw;
+  height: 80vh;
+  background-color: #3a3a3a;
+  padding: 0px;
+  margin: auto;
+  margin-top: 7vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 15px;
+  padding: 14px;
+  border: 2px solid #5a5a5a;
+  border-radius: 14px;
+}
+
+#displayBox {
+  width: 99%;
+  height: 3.8rem;
+  border: 2px solid #444444;
+  grid-column: 1/5;
+  background-color: #f1f1f1;
+  border-radius: 7px;
+  place-self: center;
+  text-align: end;
+  margin: 16px 0px 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.8rem;
+  color: black;
+  line-height: 3.8rem;
+  font-weight: 500;
+}
+
+.equalToSign {
+  grid-column: 1/4;
+  grid-row: 6;
+}
+
+.calcBtn {
+  background-color: #f9ffff;
+  border: 1px solid #5a5a5a;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.calcBtn:hover {
+  background-color: #e5fdf7;
+  border: 2px solid #87f8dc;
+  cursor: pointer;
+}
+
+@media (max-width: 560px) {
+  #outerBox {
+    width: 50vw;
+    height: 80vh;
+    gap: 10px;
+    padding: 14px;
+  }
+
+  #displayBox {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}

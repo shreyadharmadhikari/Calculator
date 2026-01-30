@@ -1,0 +1,8 @@
+Improvements and work pending for Calculator:
+
+1) Decimal numbers handling
+2) Divide by Zero Exception handling
+3) Operator and expression validity check.
+For Example: **, //, ^^, ++ these are not allowed or ******, any these pattern not allowed 
+except for:  *-, /-, +-, --, ^-  
+4) That is negative numbers and all the possible negative valued cases need to be properly evaluated. 
