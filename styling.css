@@ -1,67 +1,104 @@
-#outerBox {
-  width: 35vw;
-  height: 80vh;
-  background-color: #3a3a3a;
+*,
+*::before,
+*::after {
   padding: 0px;
-  margin: auto;
-  margin-top: 7vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 15px;
-  padding: 14px;
-  border: 2px solid #5a5a5a;
-  border-radius: 14px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-#displayBox {
-  width: 99%;
-  height: 3.8rem;
-  border: 2px solid #444444;
-  grid-column: 1/5;
-  background-color: #f1f1f1;
-  border-radius: 7px;
-  place-self: center;
-  text-align: end;
-  margin: 16px 0px 10px 0px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.8rem;
-  color: black;
-  line-height: 3.8rem;
-  font-weight: 500;
-}
-
-.equalToSign {
-  grid-column: 1/4;
-  grid-row: 6;
+h1 {
+  text-align: center;
+  color: #4d4b4b;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
 }
 
 .calcBtn {
-  background-color: #f9ffff;
-  border: 1px solid #5a5a5a;
-  border-radius: 10px;
-  font-size: 1.5rem;
-  margin: 5px;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: #faffff;
+  border: 1px solid #7bf3f3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7rem;
+  margin: 0.6rem;
+  color: #302b2b;
+  border-radius: 6px;
 }
 
 .calcBtn:hover {
-  background-color: #e5fdf7;
-  border: 2px solid #87f8dc;
+  background-color: #dcfafa;
   cursor: pointer;
 }
 
-@media (max-width: 560px) {
-  #outerBox {
-    width: 50vw;
-    height: 80vh;
-    gap: 10px;
-    padding: 14px;
+#outerBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: fit-content;
+  height: fit-content;
+  margin: 6vh auto;
+  padding: 1.2rem;
+  background-color: #4d4b4b;
+  border: 1px solid #dbdbdb;
+  border-radius: 9px;
+  box-shadow: 0px 1px 10px 8px #f1f1f1;
+}
+
+#displayBox {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  height: 3.2rem;
+  width: 96%;
+  background-color: #eefcfc;
+  border: 1px solid #686464;
+  padding: 0.4rem;
+  font-size: 2.8rem;
+  color: #0c0b0b;
+  align-self: center;
+  justify-self: center;
+  border-radius: 2px;
+  text-align: end;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cancel {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  height: 7rem;
+}
+
+.equalToSign {
+  grid-column: 3/5;
+  grid-row: 6/7;
+  width: 7.2rem;
+}
+
+@media (min-width: 992px) {
+  .calcBtn {
+    width: 4.5rem;
+    height: 3.2rem;
+    align-self: center;
+    justify-self: center;
+  }
+  .cancel {
+    grid-column: 4/5;
+    grid-row: 2/4;
+    height: 7.6rem;
   }
 
+  .equalToSign {
+    grid-column: 3/5;
+    grid-row: 6/7;
+    width: 11rem;
+  }
   #displayBox {
-    width: 100%;
-    height: 3rem;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
+    height: 3.4rem;
+  }
+
+  #outerBox {
+    width: 490px;
+    padding-top: 2rem;
   }
 }
