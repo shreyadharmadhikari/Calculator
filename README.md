@@ -51,8 +51,10 @@ Frontend Web Application
 - More advanced mathematical functions
 - History panel for previous calculations
 
+#### Website Live At- https://shreyadharmadhikari.github.io/Calculator/
+  
+
 ## Preview
 
 <img width="1366" height="768" alt="Calculator Preview" src="https://github.com/user-attachments/assets/bc98204c-b693-475e-8d1f-e00f45043359" />
 
-Website Live At- https://shreyadharmadhikari.github.io/Calculator/
